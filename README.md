@@ -63,7 +63,7 @@ The `Video for LivePortrait` node takes in a video of any size which contains a 
 
 <div align="center">
 
-<img src="livePortrait.gif" /> <br></br>
+<img src="readMeAssets/livePortrait.gif" /> <br></br>
 </div>
 
 
@@ -71,6 +71,8 @@ The `Video for LivePortrait` node takes in a video of any size which contains a 
 **<font color=red> Note </font>**:
 
 - >You can get these nodes by downloading this repository, extracting, and placing it in the custom_nodes folder of your ComfyUI directory. I will update this repository when the nodes become available through the ComfyUI-Manager.
+
+- >You can get the workflows from the animationWorkflows folder. The folder also contains animation workflows related to animatediff.
 
 <!-- - >You can also connect a lineArt preprocessor to the LineArt2LineArt Assistant node and modify as you please.
 
