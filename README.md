@@ -67,10 +67,31 @@ The `Video for LivePortrait` node takes in a video of any size which contains a 
 </div>
 
 
+## Installation
+
+You can get these nodes by downloading this repository, extracting, and placing it in the custom_nodes folder of your ComfyUI directory. 
+You might already have all the requirements installed in your comfyUI environment, but if not, then with your comfyUI environment opened in your CLI, you can navigate to custom_nodes/ComfyUI-Animation_Nodes_and_Workflows folder and install requirements as shown below.
+
+```
+pip install -r requirements.txt
+
+```
+
+
+If using a python-embedded environment, you can open your CLI in your '/custom_nodes/ComfyUI-Animation_Nodes_and_Workflows' folder and install the requirements as shown below.
+
+
+```
+..\..\..\python_embeded\python.exe -s -m pip install -r requirements.txt
+
+```
+
+You can restart comfyUI after the installation and start using the nodes. If you get any red node from the associated workflows, try installing the missing custom nodes with the comfyUI manager. If the nodes cannot be found, then check your CLI for any error. Also ensure you did not miss any step in the installation process. 
+You can not yet install these nodes via the comfyUI manager. I will update this repository with the required information when that option becomes available.
+
 
 **<font color=red> Note </font>**:
 
-- >You can get these nodes by downloading this repository, extracting, and placing it in the custom_nodes folder of your ComfyUI directory. I will update this repository when the nodes become available through the ComfyUI-Manager.
 
 - >You can get the workflows from the animationWorkflows folder. The folder also contains animation workflows related to animatediff.
 

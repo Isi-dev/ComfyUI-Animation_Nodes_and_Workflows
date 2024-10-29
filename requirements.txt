@@ -1,0 +1,5 @@
+torch
+torchaudio
+numpy
+opencv-python
+mediapipe
