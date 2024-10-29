@@ -11,6 +11,8 @@ The `Join Videos` node is for videos to video compilation. A node can take in up
 <img src="readMeAssets/joinVideos2.gif" />
 </div>
 
+You can watch a video about this node [here](https://youtu.be/WiLun8E9T-E) 
+
 ## Replace Img_or_Vid_Bg
 
 The `Replace Img_or_Vid_Bg` node is for replacing the background of images and videos. It is to be used with any background removal node.
