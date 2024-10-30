@@ -758,8 +758,8 @@ class MakeDrivingVideoForLivePortrait:
                 h, w, _ = frame.shape
 
                 # Convert the BGR image to RGB
-                rgb_frame = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
-                results = face_mesh.process(rgb_frame)
+                # rgb_frame = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
+                results = face_mesh.process(frame)
 
                 if results.multi_face_landmarks:
                     # Get the landmarks for the first detected face
