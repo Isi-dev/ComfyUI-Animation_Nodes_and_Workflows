@@ -68,6 +68,8 @@ The `Video for LivePortrait` node takes in a video of any size which contains a 
 <img src="readMeAssets/livePortrait.gif" /> <br></br>
 </div>
 
+You can watch a video about this node [here](https://youtu.be/uEicKGu89mY)
+
 
 ## Installation
 
