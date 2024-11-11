@@ -73,6 +73,15 @@ You can watch a video about this node [here](https://youtu.be/uEicKGu89mY)
 
 ## Installation
 
+You can install these nodes via the ComfyUI Manager by searching for:
+
+
+```
+ComfyUI-Animation_Nodes_and_Workflows
+
+```
+
+Alternatively,
 You can get these nodes by downloading this repository, extracting, and placing it in the custom_nodes folder of your ComfyUI directory. 
 You might already have all the requirements installed in your comfyUI environment, but if not, then with your comfyUI environment opened in your CLI, you can navigate to custom_nodes/ComfyUI-Animation_Nodes_and_Workflows folder and install requirements as shown below.
 
@@ -91,7 +100,6 @@ If using a python-embedded environment, you can open your CLI in your '/custom_n
 ```
 
 You can restart comfyUI after the installation and start using the nodes. If you get any red node from the associated workflows, try installing the missing custom nodes with the comfyUI manager. If the nodes cannot be found, then check your CLI for any error. Also ensure you did not miss any step in the installation process. 
-You can not yet install these nodes via the comfyUI manager. I will update this repository with the required information when that option becomes available.
 
 
 **<font color=red> Note </font>**:
