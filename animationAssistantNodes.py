@@ -1,7 +1,7 @@
 import cv2
 import numpy as np
 import torch
-from .utils import create_frame_and_audio_lists, combine_frames_and_audios, convert_to_uint8
+from .utils import create_frame_and_audio_lists, combine_frames_and_audios, convert_to_uint8, get_available_styles, generate_prompts
 from nodes import MAX_RESOLUTION
 import warnings
 
@@ -851,6 +851,38 @@ class MakeDrivingVideoForLivePortrait:
     
 
 
+class CLIPTextEncodeStyles:
+    @classmethod
+    def INPUT_TYPES(s):
+        return {
+            "required": {
+                "positive_prompt": ("STRING", {"multiline": True, "dynamicPrompts": True, "tooltip": "The text to be encoded."}), 
+                "negative_prompt": ("STRING", {"multiline": True, "dynamicPrompts": True, "tooltip": "The text to be encoded."}),
+                "style": (get_available_styles(),),
+                "clip": ("CLIP", {"tooltip": "The CLIP model used for encoding the text."})
+            }
+        }
+    RETURN_TYPES = ("CONDITIONING", "CONDITIONING",)
+    RETURN_NAMES = ("+VE", "-VE")
+    OUTPUT_TOOLTIPS = ("A conditioning containing the embedded text used to guide the diffusion model.",)
+    FUNCTION = "encode"
+
+    CATEGORY = "conditioning"
+    DESCRIPTION = "Encodes a text prompt using a CLIP model into an embedding that can be used to guide the diffusion model towards generating specific images with selected style."
+
+    def encode(self, clip, positive_prompt, negative_prompt, style):
+        prompts = generate_prompts(style, positive_prompt, negative_prompt)
+        tokens = clip.tokenize(prompts["positive_prompt"])
+        output = clip.encode_from_tokens(tokens, return_pooled=True, return_dict=True)
+        cond = output.pop("cond")
+        tokensN = clip.tokenize(prompts["negative_prompt"])
+        outputN = clip.encode_from_tokens(tokensN, return_pooled=True, return_dict=True)
+        condN = outputN.pop("cond")
+        return ([[cond, output]], [[condN, outputN]],)
+    
+
+
+
 
 def import_mediapipe():
     import subprocess
@@ -891,6 +923,7 @@ NODE_CLASS_MAPPINGS = {
     "MoveLeftOrRight" : MoveLeftOrRight,
     "MoveUpOrDown" : MoveUpOrDown,
     "MakeDrivingVideoForLivePortrait" : MakeDrivingVideoForLivePortrait,
+    "CLIPTextEncodeStyles" : CLIPTextEncodeStyles,
     
 }
 
@@ -903,5 +936,6 @@ NODE_DISPLAY_NAME_MAPPINGS = {
     "MoveLeftOrRight" : "Move Left_Or_Right",
     "MoveUpOrDown" : "Move Up_Or_Down",
     "MakeDrivingVideoForLivePortrait" : "Video for LivePortrait",
+    "CLIPTextEncodeStyles" : "Prompt Style Encoder",
     
 }

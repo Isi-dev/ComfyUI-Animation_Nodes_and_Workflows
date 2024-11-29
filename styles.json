@@ -1,0 +1,815 @@
+{
+        "none": {
+                "positive": "",
+                "negative": ""
+            },
+            "anime1": {
+                "positive": "Japanese comic book anime style, samurai x,  exaggerated features, sharp dark lines, anime, anime style, colorful, vibrant, detailed, intricate, large expressive eyes",
+                "negative": "text, logo, signature, watermark, soft edges, low quality, blurry, realistic style, distorted faces, bad anatomy, poor proportions"
+            },
+            "anime2": {
+                "positive": "a beautiful anime-style illustration, expressive eyes, exaggerated features, vibrant colors, detailed, expressive characters, studio ghibli influence",
+                "negative": "low quality, blurry, realistic style, distorted faces, bad anatomy, poor proportions"
+            },
+            "beauArt": {
+                "positive": "hard edges, black and white book illustration, bold lines, black lines, white background",
+                "negative": "color, poor contrast, realistic, soft edges"
+            },
+            "black Line art":{
+                "positive": "Black Line art, black and white, sharp lines, clear, minimalist, graphic, precision, ink, monochrome",
+                "negative": "photograph, stock photo, realistic, deformed, glitch, color, vague, blurry, noisy, low contrast, photorealistic, realism, impressionism, expressionism, oil, acrylic, watercolor, pastel, textured, gradient, shaded"
+            },
+            "comic1": {
+                "positive": "vivid comic book illustration, bold lines, halftone shading, dramatic action",
+                "negative": "washed-out colors, lack of contrast, soft edges, overly detailed backgrounds"
+            },
+            "comic2": {
+                "positive": "comic book style, dynamic pose, exaggerated features, bold lines, vibrant colors, ink wash, retro style, comic book panel",
+                "negative": "blurry, low quality, poorly drawn, deformed, disfigured, extra limbs, missing limbs, extra fingers, missing fingers, unrealistic anatomy, poorly proportioned, monochrome, grayscale, black and white"
+            },
+            "disney": {
+                "positive": "classic Disney-style art, colorful, detailed characters, expressive emotions, smooth animations, magical and whimsical setting",
+                "negative": "dull colors, lack of detail, distorted features, dark themes"
+            },
+            "manga": {
+                "positive": "black and white manga illustration, bold lines, dynamic compositions, detailed linework, expressive characters, action-packed panels",
+                "negative": "color, poor contrast, lack of detail, blurry, distorted anatomy, flat expressions"
+            },
+            "ps1": {
+                "positive": "low-poly 3D graphics in PS1 style, retro gaming aesthetics, simple geometric shapes, nostalgic vibe",
+                "negative": "modern high-resolution graphics, realistic textures, excessive detail, smooth rendering"
+            },
+            "pixar": {
+                "positive": "a 3D animation in Pixar style, highly detailed, vibrant, whimsical, expressive characters, cinematic lighting, storybook atmosphere",
+                "negative": "grainy textures, flat colors, dull, uninspired composition, poor rendering"
+            },
+            "toy": {
+                "positive": "toy-like miniature characters, bright colors, soft plastic textures, whimsical design, playful atmosphere, detailed craftsmanship",
+                "negative": "realistic details, dull colors, rough textures, lack of charm"
+            }, 
+            "watercolor": {
+                "positive": "soft and vibrant watercolor painting, gentle gradients, flowing textures, light and airy feel, pastel tones",
+                "negative": "harsh lines, digital appearance, over-saturated colors, poor blending"
+            },
+
+            "3D Model":{
+                "positive": "professional 3d model, octane render, highly detailed, volumetric, dramatic lighting",
+                "negative": "ugly, deformed, noisy, low poly, blurry, painting"
+            },
+           "Abstract":{
+                "positive": "Abstract style art, Non-representational, colors and shapes, expression of feelings, imaginative, highly detailed",
+                "negative": "realistic, photographic, figurative, concrete"
+            },
+           "Abstract Expressionism":{
+                "positive": "abstract expressionist painting, energetic brushwork, bold colors, abstract forms, expressive, emotional",
+                "negative": "realistic, photorealistic, low contrast, plain, simple, monochrome"
+            },
+           "Abstract Expressionism 2":{
+                "positive": "Abstract Expressionism art, High contrast, minimalistic, colorful, stark, dramatic, expressionism",
+                "negative": "ugly, deformed, noisy, blurry, low contrast, realism, photorealistic"
+            },
+           "Academia":{
+                "positive": "Academia, preppy Ivy League style, stark, dramatic, chic boarding school, academia",
+                "negative": "ugly, deformed, noisy, blurry, low contrast, grunge, sloppy, unkempt"
+            },
+           "Action Figure":{
+                "positive": "Action Figure, plastic collectable action figure, collectable toy action figure",
+                "negative": "ugly, deformed, noisy, blurry, low contrast"
+            },
+           "Adorable 3D Character":{
+                "positive": "Adorable 3D Character, 3D render, adorable character, 3D art",
+                "negative": "ugly, deformed, noisy, blurry, low contrast, grunge, sloppy, unkempt, photograph, photo, realistic"
+            },
+           "Adorable Kawaii":{
+                "positive": "Adorable Kawaii, pretty, cute, adorable, kawaii",
+                "negative": "ugly, deformed, noisy, blurry, low contrast, gothic, dark, moody, monochromatic"
+            },
+           "Advertising":{
+                "positive": "Advertising poster style, Professional, modern, product-focused, commercial, eye-catching, highly detailed",
+                "negative": "noisy, blurry, amateurish, sloppy, unattractive"
+            },
+           "Alien":{
+                "positive": "Alien-theme, Extraterrestrial, cosmic, otherworldly, mysterious, sci-fi, highly detailed",
+                "negative": "earthly, mundane, common, realistic, simple"
+            },
+           "Analog Film":{
+                "positive": "analog film photo, faded film, desaturated, 35mm photo, grainy, vignette, vintage, Kodachrome, Lomography, stained, highly detailed, found footage",
+                "negative": "painting, drawing, illustration, glitch, deformed, mutated, cross-eyed, ugly, disfigured"
+            },
+           "Anime":{
+                "positive": "anime artwork, anime style, key visual, vibrant, studio anime,  highly detailed",
+                "negative": "photo, deformed, black and white, realism, disfigured, low contrast"
+            },
+           "Architectural":{
+                "positive": "Architectural style, Clean lines, geometric shapes, minimalist, modern, architectural drawing, highly detailed",
+                "negative": "curved lines, ornate, baroque, abstract, grunge"
+            },
+           "Art Deco":{
+                "positive": "art deco style, geometric shapes, bold colors, luxurious, elegant, decorative, symmetrical, ornate, detailed",
+                "negative": "ugly, deformed, noisy, blurry, low contrast, realism, photorealistic, modernist, minimalist"
+            },
+           "Art Deco 2":{
+                "positive": "Art Deco, sleek, geometric forms, art deco style",
+                "negative": "ugly, deformed, noisy, blurry, low contrast"
+            },
+           "Art Nouveau":{
+                "positive": "art nouveau style, elegant, decorative, curvilinear forms, nature-inspired, ornate, detailed",
+                "negative": "ugly, deformed, noisy, blurry, low contrast, realism, photorealistic, modernist, minimalist"
+            },
+           "Art Nouveau 2":{
+                "positive": "Art Nouveau art, sleek, organic forms, long, sinuous, art nouveau style",
+                "negative": "ugly, deformed, noisy, blurry, low contrast, industrial, mechanical"
+            },
+           "Astral Aura":{
+                "positive": "Astral Aura, astral, colorful aura, vibrant energy",
+                "negative": "ugly, deformed, noisy, blurry, low contrast"
+            },
+           "Avant-garde":{
+                "positive": "Avant-garde, unusual, experimental, avant-garde art",
+                "negative": "ugly, deformed, noisy, blurry, low contrast"
+            },
+           "Baroque":{
+                "positive": "Baroque, dramatic, exuberant, grandeur, baroque art",
+                "negative": "ugly, deformed, noisy, blurry, low contrast"
+            },
+           "Bauhaus-Style Poster":{
+                "positive": "Bauhaus-Style Poster, simple geometric shapes, clean lines, primary colors, Bauhaus-Style Poster",
+                "negative": "ugly, deformed, noisy, blurry, low contrast"
+            },
+           "Biomechanical":{
+                "positive": "biomechanical style, blend of organic and mechanical elements, futuristic, cybernetic, detailed, intricate",
+                "negative": "natural, rustic, primitive, organic, simplistic"
+            },
+           "Biomechanical Cyberpunk":{
+                "positive": "biomechanical cyberpunk, cybernetics, human-machine fusion, dystopian, organic meets artificial, dark, intricate, highly detailed",
+                "negative": "natural, colorful, deformed, sketch, low contrast, watercolor"
+            },
+           "Blueprint Schematic Drawing":{
+                "positive": "Blueprint Schematic Drawing, technical drawing, blueprint, schematic",
+                "negative": "ugly, deformed, noisy, blurry, low contrast"
+            },
+           "Bubble Bobble Game":{
+                "positive": "Bubble Bobble style, 8-bit, cute, pixelated, fantasy, vibrant, reminiscent of Bubble Bobble game",
+                "negative": "realistic, modern, photorealistic, violent, horror"
+            },
+           "Caricature":{
+                "positive": "Caricature, exaggerated, comical, caricature",
+                "negative": "ugly, deformed, noisy, blurry, low contrast, realistic"
+            },
+           "Cel Shaded Art":{
+                "positive": "Cel Shaded Art, 2D, flat color, toon shading, cel shaded style",
+                "negative": "ugly, deformed, noisy, blurry, low contrast"
+            },
+           "Character Design Sheet":{
+                "positive": "Character Design Sheet, character reference sheet, character turn around",
+                "negative": "ugly, deformed, noisy, blurry, low contrast"
+            },
+           "Cinematic Film":{
+                "positive": "cinematic film still, shallow depth of field, vignette, highly detailed, high budget, bokeh, cinemascope, moody, epic, gorgeous, film grain, grainy",
+                "negative": "anime, cartoon, graphic, text, painting, crayon, graphite, abstract, glitch, deformed, mutated, ugly, disfigured"
+            },
+           "Cinematic Photograph":{
+                "positive": "UHD, 4k, ultra detailed, cinematic, a photograph, epic, beautiful lighting, inpsiring",
+                "negative": "ugly, deformed, noisy, blurry, low contrast, realistic"
+            },
+           "Classicism Art":{
+                "positive": "Classicism Art, inspired by Roman and Greek culture, clarity, harmonious, classicism art",
+                "negative": "ugly, deformed, noisy, blurry, low contrast"
+            },
+           "Collage":{
+                "positive": "Collage style, Mixed media, layered, textural, detailed, artistic",
+                "negative": "ugly, deformed, noisy, blurry, low contrast, realism, photorealistic"
+            },
+           "Color Field Painting":{
+                "positive": "Color Field Paintin, abstract, simple, geometric, color field painting style",
+                "negative": "ugly, deformed, noisy, blurry, low contrast"
+            },
+           "Colored Pencil Art":{
+                "positive": "Colored Pencil Art, colored pencil strokes, light color, visible paper texture, colored pencil art",
+                "negative": "ugly, deformed, noisy, blurry, low contrast"
+            },
+           "Commercial Illustration 1920s":{
+                "positive": "1920s commercial illustration, magazine cover illustration from the 1920's, exaggerated realism, a hint of caricature",
+                "negative": "monochromatic, ugly, deformed, noisy, blurry, low contrast, photo, photograph, realistic, low res"
+            },
+           "Comic Book":{
+                "positive": "comic book art, comic art, graphic novel illustration",
+                "negative": "photograph, deformed, glitch, noisy, realistic, stock photo"
+            },
+           "Conceptual Art":{
+                "positive": "Conceptual Art, concept art",
+                "negative": "ugly, deformed, noisy, blurry, low contrast"
+            },
+               "Constructivism 1":{
+                "positive": "constructivist style, geometric shapes, bold colors, dynamic composition, propaganda art style",
+                "negative": "realistic, photorealistic, low contrast, plain, simple, abstract expressionism"
+            },
+           "Constructivism 2":{
+                "positive": "Constructivism Art, minimalistic, geometric forms, flat, 2D, constructivism art",
+                "negative": "ugly, deformed, noisy, blurry, low contrast"
+            },
+           "Craft Clay":{
+                "positive": "play-doh style sculpture, sculpture, clay art, centered composition, Claymation",
+                "negative": "sloppy, messy, grainy, highly detailed, ultra textured, photo"
+            },
+               "Cubism 1":{
+                "positive": "Cubist artwork, Geometric shapes, abstract, innovative, revolutionary",
+                "negative": "anime, photorealistic, 35mm film, deformed, glitch, low contrast, noisy"
+            },
+           "Cubism 2":{
+                "positive": "Cubism Art, flat geometric forms, 2D, limited color palette, cubism art",
+                "negative": "ugly, deformed, noisy, blurry, low contrast"
+            },
+           "Cybernetic":{
+                "positive": "cybernetic style, futuristic, technological, cybernetic enhancements, robotics, artificial intelligence themes",
+                "negative": "ugly, deformed, noisy, blurry, low contrast, realism, photorealistic, historical, medieval"
+            },
+           "Cybernetic Robot":{
+                "positive": "cybernetic robo, android, AI, machine, metal, wires, tech, futuristic, highly detailed",
+                "negative": "organic, natural, human, sketch, watercolor, low contrast"
+            },
+           "Cyberpunk Cityscape":{
+                "positive": "cyberpunk cityscape, neon lights, dark alleys, skyscrapers, futuristic, vibrant colors, high contrast, highly detailed",
+                "negative": "natural, rural, deformed, low contrast, black and white, sketch, watercolor"
+            },
+           "Cyberpunk":{
+                "positive": "cyberpunk style, neon, dystopian, futuristic, digital, vibrant, detailed, high contrast, reminiscent of cyberpunk genre",
+                "negative": "historical, natural, rustic, low detailed"
+            },
+           "DMT Art Style":{
+                "positive": "DMT Art Style, bright colors, surreal visuals, swirling patterns, DMT art style",
+                "negative": "ugly, deformed, noisy, blurry, low contrast"
+            },
+           "Dadaism":{
+                "positive": "Dadaism Art, satirical, nonsensical, dadaism art",
+                "negative": "ugly, deformed, noisy, blurry, low contrast"
+            },
+           "Dark Fantasy":{
+                "positive": "Dark Fantasy Art, dark, moody, dark fantasy style",
+                "negative": "ugly, deformed, noisy, blurry, low contrast, bright, sunny"
+            },
+           "Dark Moody Atmosphere":{
+                "positive": "Dark Moody Atmosphere, dramatic, mysterious, dark moody atmosphere",
+                "negative": "ugly, deformed, noisy, blurry, low contrast, vibrant, colorful, bright"
+            },
+           "Digital Art":{
+                "positive": "concept art, digital artwork, illustrative, painterly, matte painting, highly detailed",
+                "negative": "photo, photorealistic, realism, ugly"
+            },
+           "Disco":{
+                "positive": "Disco-themed, Vibrant, groovy, retro 70s style, shiny disco balls, neon lights, dance floor, highly detailed",
+                "negative": "minimalist, rustic, monochrome, contemporary, simplistic"
+            },
+           "Doodle Art":{
+                "positive": "Doodle Art Style, drawing, freeform, swirling patterns, doodle art style",
+                "negative": "ugly, deformed, noisy, blurry, low contrast"
+            },
+           "Double Exposure":{
+                "positive": "Double Exposure photography, double image ghost effect, image combination, double exposure style",
+                "negative": "ugly, deformed, noisy, blurry, low contrast"
+            },
+           "Dreamscape":{
+                "positive": "Dreamscape, Surreal, ethereal, dreamy, mysterious, fantasy, highly detailed",
+                "negative": "realistic, concrete, ordinary, mundane"
+            },
+           "Dripping Paint Splatter Art":{
+                "positive": "Dripping Paint Splatter Art, dramatic, paint drips, splatters, dripping paint",
+                "negative": "ugly, deformed, noisy, blurry, low contrast"
+            },
+           "Dystopian":{
+                "positive": "Dystopian style, Bleak, post-apocalyptic, somber, dramatic, highly detailed",
+                "negative": "ugly, deformed, noisy, blurry, low contrast, cheerful, optimistic, vibrant, colorful"
+            },
+           "Enhance":{
+                "positive": "breathtaking, award-winning, professional, highly detailed",
+                "negative": "ugly, deformed, noisy, blurry, distorted, grainy"
+            },
+               "Expressionism 1":{
+                "positive": "expressionist, raw, emotional, dynamic, distortion for emotional effect, vibrant, use of unusual colors, detailed",
+                "negative": "realism, symmetry, quiet, calm, photo"
+            },
+           "Expressionism 2":{
+                "positive": "Expressionism Art Style, an expressionist painting, visible brush strokes, contrast, emotional, exaggerated forms, expressionism art style",
+                "negative": "ugly, deformed, noisy, blurry, low contrast, realistic, photograph, photo"
+            },
+           "Faded Polaroid Photo":{
+                "positive": "Faded Polaroid Photo, analog, old faded photo, old polaroid",
+                "negative": "ugly, deformed, noisy, blurry, low contrast, vibrant, colorful"
+            },
+           "Fairy Tale":{
+                "positive": "Fairy tale, Magical, fantastical, enchanting, storybook style, highly detailed",
+                "negative": "realistic, modern, ordinary, mundane"
+            },
+           "Fantasy Art":{
+                "positive": "ethereal fantasy concept art, magnificent, celestial, ethereal, painterly, epic, majestic, magical, fantasy art, cover art, dreamy",
+                "negative": "photographic, realistic, realism, 35mm film, dslr, cropped, frame, text, deformed, glitch, noise, noisy, off-center, deformed, cross-eyed, closed eyes, bad anatomy, ugly, disfigured, sloppy, duplicate, mutated, black and white"
+            },
+           "Fauvism":{
+                "positive": "Fauvism Art, painterly, bold colors, textured brushwork, fauvism art",
+                "negative": "ugly, deformed, noisy, blurry, low contrast"
+            },
+           "Fighting Game":{
+                "positive": "Fighting game style, Dynamic, vibrant, action-packed, detailed character design, reminiscent of fighting video games",
+                "negative": "peaceful, calm, minimalist, photorealistic"
+            },
+           "Film Noir":{
+                "positive": "Film noir style, Monochrome, high contrast, dramatic shadows, 1940s style, mysterious, cinematic",
+                "negative": "ugly, deformed, noisy, blurry, low contrast, realism, photorealistic, vibrant, colorful"
+            },
+           "Flat 2D Art":{
+                "positive": "Flat 2D Art, simple flat color, 2-dimensional, Flat 2D Art Style",
+                "negative": "ugly, deformed, noisy, blurry, low contrast, 3D, photo, realistic"
+            },
+           "Flat Papercut":{
+                "positive": "Flat papercut style, papercut art, Silhouette, clean cuts, paper, sharp edges, minimalist, color block",
+                "negative": "3D, high detail, noise, grainy, blurry, painting, drawing, photo, disfigured"
+            },
+           "Food Photography":{
+                "positive": "Food photography style, Appetizing, professional, culinary, high-resolution, commercial, highly detailed",
+                "negative": "unappetizing, sloppy, unprofessional, noisy, blurry"
+            },
+           "Fortnite Art Style":{
+                "positive": "Fortnite Art Style, 3D cartoon, colorful, Fortnite Art Style",
+                "negative": "ugly, deformed, noisy, blurry, low contrast, photo, realistic"
+            },
+           "Futurism":{
+                "positive": "Futurism Art Style, dynamic, dramatic, Futurism Art Style",
+                "negative": "ugly, deformed, noisy, blurry, low contrast"
+            },
+           "Futuristic":{
+                "positive": "futuristic style, sleek, modern, ultramodern, high tech, detailed",
+                "negative": "ugly, deformed, noisy, blurry, low contrast, realism, photorealistic, vintage, antique"
+            },
+           "Futuristic Sci-Fi":{
+                "positive": "sci-fi style, futuristic, technological, space themes, advanced civilizations",
+                "negative": "ugly, deformed, noisy, blurry, low contrast, realism, photorealistic, historical, medieval"
+            },
+           "GTA":{
+                "positive": "GTA style art, satirical, exaggerated, GTA art style, vibrant colors, iconic characters, action-packed",
+                "negative": "realistic, black and white, low contrast, impressionist, cubist, noisy, blurry, deformed"
+            },
+           "Glamour":{
+                "positive": "glamorous photo, high fashion, luxurious, extravagant, stylish, sensual, opulent, elegance, stunning beauty, professional, high contrast, detailed",
+                "negative": "ugly, deformed, noisy, blurry, distorted, grainy, sketch, low contrast, dull, plain, modest"
+            },
+           "Glitchcore":{
+                "positive": "Glitchcore Art Style, dynamic, dramatic, distorted, vibrant colors, glitchcore art style",
+                "negative": "ugly, deformed, noisy, blurry, low contrast"
+            },
+           "Glo-fi":{
+                "positive": "Glo-fi Art Style, dynamic, dramatic, vibrant colors, glo-fi art style",
+                "negative": "ugly, deformed, noisy, blurry, low contrast"
+            },
+           "Googie Art Style":{
+                "positive": "Googie Art Style, dynamic, dramatic, 1950's futurism, bold boomerang angles, Googie art style",
+                "negative": "ugly, deformed, noisy, blurry, low contrast"
+            },
+           "Gothic":{
+                "positive": "Gothic style, Dark, mysterious, haunting, dramatic, ornate, detailed",
+                "negative": "ugly, deformed, noisy, blurry, low contrast, realism, photorealistic, cheerful, optimistic"
+            },
+           "Graffiti Art 1":{
+                "positive": "Graffiti art, Street art, vibrant, urban, detailed, tag, mural",
+                "negative": "ugly, deformed, noisy, blurry, low contrast, realism, photorealistic"
+            },
+           "Graffiti Art 2":{
+                "positive": "Graffiti art, dynamic, dramatic, vibrant colors, bold lines, graffiti art style",
+                "negative": "ugly, deformed, noisy, blurry, low contrast"
+            },
+           "Grunge":{
+                "positive": "Grunge style, Textured, distressed, vintage, edgy, punk rock vibe, dirty, noisy",
+                "negative": "smooth, clean, minimalist, sleek, modern, photorealistic"
+            },
+           "HDR":{
+                "positive": "HDR photo, High dynamic range, vivid, rich details, clear shadows and highlights, realistic, intense, enhanced contrast, highly detailed",
+                "negative": "flat, low contrast, oversaturated, underexposed, overexposed, blurred, noisy"
+            },
+           "Harlem Renaissance Art":{
+                "positive": "Harlem Renaissance Art Style, dynamic, dramatic, 1920s African American culture, Harlem Renaissance art style",
+                "negative": "ugly, deformed, noisy, blurry, low contrast"
+            },
+           "High Fashion":{
+                "positive": "High Fashion, dynamic, dramatic, haute couture, elegant, ornate clothing, High Fashion",
+                "negative": "ugly, deformed, noisy, blurry, low contrast"
+            },
+           "Horror":{
+                "positive": "Horror-themed, Eerie, unsettling, dark, spooky, suspenseful, grim, highly detailed",
+                "negative": "cheerful, bright, vibrant, light-hearted, cute"
+            },
+           "Hyperrealism":{
+                "positive": "Hyperrealistic art, Extremely high-resolution details, photographic, realism pushed to extreme, fine texture, incredibly lifelike",
+                "negative": "simplified, abstract, unrealistic, impressionistic, low resolution"
+            },
+           "Idyllic":{
+                "positive": "Idyllic, peaceful, happy, pleasant, happy, harmonious, picturesque, charming",
+                "negative": "ugly, deformed, noisy, blurry, low contrast"
+            },
+           "Impressionism 1":{
+                "positive": "Impressionist painting, loose brushwork, vibrant color, light and shadow play, captures feeling over form",
+                "negative": "anime, photorealistic, 35mm film, deformed, glitch, low contrast, noisy"
+            },
+           "Impressionism 2":{
+                "positive": "Impressionism art, painterly, small brushstrokes, visible brushstrokes, impressionistic style",
+                "negative": "ugly, deformed, noisy, blurry, low contrast"
+            },
+           "Infographic Drawing":{
+                "positive": "Infographic Drawing, diagram, infographic",
+                "negative": "ugly, deformed, noisy, blurry, low contrast"
+            },
+           "Ink Dripping Drawing":{
+                "positive": "Ink Dripping Drawing, ink drawing, ink splash, ink wash, dripping ink",
+                "negative": "ugly, deformed, noisy, blurry, low contrast, colorful, vibrant"
+            },
+           "Isometric Style":{
+                "positive": "isometric style, vibrant, beautiful, crisp, detailed, ultra detailed, intricate, isometric style",
+                "negative": "deformed, mutated, ugly, disfigured, blur, blurry, noise, noisy, realistic, photographic"
+            },
+           "Japanese Ink Drawing":{
+                "positive": "Japanese Style Ink Drawing, ink drawing, inkwash, Japanese Style Ink Drawing",
+                "negative": "ugly, deformed, noisy, blurry, low contrast, colorful, vibrant"
+            },
+           "Kawaii":{
+                "positive": "kawaii style, cute, adorable, brightly colored, cheerful, anime influence, highly detailed",
+                "negative": "dark, scary, realistic, monochrome, abstract"
+            },
+           "Kirigami":{
+                "positive": "Kirigami representation, 3D, paper folding, paper cutting, Japanese, intricate, symmetrical, precision, clean lines",
+                "negative": "painting, drawing, 2D, noisy, blurry, deformed"
+            },
+           "Knolling Photography":{
+                "positive": "Knolling Photography, flat lay photography, object arrangment, knolling photography",
+                "negative": "ugly, deformed, noisy, blurry, low contrast"
+            },
+           "Legend of Zelda":{
+                "positive": "Legend of Zelda style art, Vibrant, fantasy, detailed, epic, heroic, reminiscent of The Legend of Zelda series",
+                "negative": "sci-fi, modern, realistic, horror"
+            },
+           "Light Cheery Atmosphere":{
+                "positive": "Light Cheery Atmosphere, happy, joyful, cheerful, carefree, gleeful, lighthearted, pleasant atmosphere",
+                "negative": "ugly, deformed, noisy, blurry, low contrast, monochromatic, dark, moody"
+            },
+           "Line Art":{
+                "positive": "line art drawing, professional, sleek, modern, minimalist, graphic, line art, vector graphics",
+                "negative": "anime, photorealistic, 35mm film, deformed, glitch, blurry, noisy, off-center, deformed, cross-eyed, closed eyes, bad anatomy, ugly, disfigured, mutated, realism, realistic, impressionism, expressionism, oil, acrylic"
+            },
+           "Logo Design":{
+                "positive": "Logo Design, dynamic graphic art, vector art, minimalist, professional logo design",
+                "negative": "ugly, deformed, noisy, blurry, low contrast"
+            },
+           "Long Exposure":{
+                "positive": "Long exposure photo, Blurred motion, streaks of light, surreal, dreamy, ghosting effect, highly detailed",
+                "negative": "static, noisy, deformed, shaky, abrupt, flat, low contrast"
+            },
+           "Lovecraftian Horror":{
+                "positive": "lovecraftian horror, eldritch, cosmic horror, unknown, mysterious, surreal, highly detailed",
+                "negative": "light-hearted, mundane, familiar, simplistic, realistic"
+            },
+           "Lowpoly":{
+                "positive": "low-poly style, low-poly game art, polygon mesh, jagged, blocky, wireframe edges, centered composition",
+                "negative": "noisy, sloppy, messy, grainy, highly detailed, ultra textured, photo"
+            },
+           "Luxurious Elegance":{
+                "positive": "Luxurious Elegance, extravagant, ornate, designer, opulent, picturesque, lavish",
+                "negative": "ugly, deformed, noisy, blurry, low contrast"
+            },
+           "Macabre":{
+                "positive": "macabre style, dark, gothic, grim, haunting, highly detailed",
+                "negative": "bright, cheerful, light-hearted, cartoonish, cute"
+            },
+           "Macro Photography":{
+                "positive": "Macro Photography, macro photograph, close-up, macro 100mm, macro photography",
+                "negative": "ugly, deformed, noisy, blurry, low contrast"
+            },
+           "Mandala Art":{
+                "positive": "Mandala style art, complex, circular design, mandala art",
+                "negative": "ugly, deformed, noisy, blurry, low contrast"
+            },
+           "Manga":{
+                "positive": "manga style art, vibrant, high-energy, detailed, iconic, Japanese comic style, manga",
+                "negative": "ugly, deformed, noisy, blurry, low contrast, realism, photorealistic, Western comic style"
+            },
+           "Marker Drawing":{
+                "positive": "Marker Drawing, bold marker lines, visibile paper texture, marker drawing",
+                "negative": "ugly, deformed, noisy, blurry, low contrast, photograph, realistic"
+            },
+           "Medievalism":{
+                "positive": "Medievalism, medival art, inspired by The Middle Ages, medieval art, elaborate patterns and decoration, Medievalism",
+                "negative": "ugly, deformed, noisy, blurry, low contrast"
+            },
+           "Metropolis":{
+                "positive": "metropolis-themed, urban, cityscape, skyscrapers, modern, futuristic, highly detailed",
+                "negative": "rural, natural, rustic, historical, simple"
+            },
+           "Minecraft":{
+                "positive": "Minecraft style art, Blocky, pixelated, vibrant colors, recognizable characters and objects, game assets, Minecraft style",
+                "negative": "smooth, realistic, detailed, photorealistic, noise, blurry, deformed"
+            },
+           "Minimalism 1":{
+                "positive": "Minimalist, Simple, clean, uncluttered, modern, elegant",
+                "negative": "ornate, complicated, highly detailed, cluttered, disordered, messy, noisy"
+            },
+           "Minimalism 2":{
+                "positive": "Minimalism art, abstract, simple geometric shapes, hard edges, sleek contours, Minimalism",
+                "negative": "ugly, deformed, noisy, blurry, low contrast"
+            },
+           "Monochrome":{
+                "positive": "Monochrome, contrast, tone, texture, detailed, Monochromatic",
+                "negative": "colorful, vibrant, noisy, blurry, deformed"
+            },
+           "Nautical":{
+                "positive": "Nautical-themed, Sea, ocean, ships, maritime, beach, marine life, highly detailed",
+                "negative": "landlocked, desert, mountains, urban, rustic"
+            },
+           "Neo-Baroque":{
+                "positive": "Neo-Baroque, ornate and elaborate, dynamic, Neo-Baroque",
+                "negative": "ugly, deformed, noisy, blurry, low contrast"
+            },
+           "Neo-Byzantine":{
+                "positive": "Neo-Byzantine, grand decorative religious style, Orthodox Christian inspired, Neo-Byzantine",
+                "negative": "ugly, deformed, noisy, blurry, low contrast"
+            },
+           "Neo-Futurism":{
+                "positive": "Neo-Futurism, high-tech, curves, spirals, flowing lines, idealistic future, Neo-Futurism",
+                "negative": "ugly, deformed, noisy, blurry, low contrast"
+            },
+           "Neo-Impressionism":{
+                "positive": "Neo-Impressionism, tiny dabs of color, Pointillism, painterly, Neo-Impressionism",
+                "negative": "ugly, deformed, noisy, blurry, low contrast, photograph, realistic"
+            },
+           "Neo-Rococo":{
+                "positive": "Neo-Rococo, curved forms, naturalistic ornamentation, elaborate, decorative, gaudy, Neo-Rococo",
+                "negative": "ugly, deformed, noisy, blurry, low contrast"
+            },
+           "Neoclassicism":{
+                "positive": "Neoclassicism, ancient Rome and Greece inspired, idealic, sober colors, Neoclassicism",
+                "negative": "ugly, deformed, noisy, blurry, low contrast"
+            },
+           "Neon Noir":{
+                "positive": "Neon noir, Cyberpunk, dark, rainy streets, neon signs, high contrast, low light, vibrant, highly detailed",
+                "negative": "bright, sunny, daytime, low contrast, black and white, sketch, watercolor"
+            },
+           "Neon Punk":{
+                "positive": "neonpunk style, cyberpunk, vaporwave, neon, vibes, vibrant, stunningly beautiful, crisp, detailed, sleek, ultramodern, magenta highlights, dark purple shadows, high contrast, cinematic, ultra detailed, intricate, professional",
+                "negative": "painting, drawing, illustration, glitch, deformed, mutated, cross-eyed, ugly, disfigured"
+            },
+           "Op Art":{
+                "positive": "Op Art, optical illusion, abstract, geometric pattern, impression of movement, Op Art",
+                "negative": "ugly, deformed, noisy, blurry, low contrast"
+            },
+           "Origami":{
+                "positive": "origami style, paper art, pleated paper, folded, origami art, pleats, cut and fold, centered composition",
+                "negative": "noisy, sloppy, messy, grainy, highly detailed, ultra textured, photo"
+            },
+           "Ornate and Intricate":{
+                "positive": "Ornate and Intricate, decorative, highly detailed, elaborate, ornate, intricate",
+                "negative": "ugly, deformed, noisy, blurry, low contrast"
+            },
+           "Paper Mache":{
+                "positive": "Paper mache representation, 3D, sculptural, textured, handmade, vibrant, fun",
+                "negative": "2D, flat, photo, sketch, digital art, deformed, noisy, blurry"
+            },
+           "Paper Quilling":{
+                "positive": "Paper quilling art, Intricate, delicate, curling, rolling, shaping, coiling, loops, 3D, dimensional, ornamental",
+                "negative": "photo, painting, drawing, 2D, flat, deformed, noisy, blurry"
+            },
+           "Papercut Collage":{
+                "positive": "Papercut collage, Mixed media, textured paper, overlapping, asymmetrical, abstract, vibrant",
+                "negative": "photo, 3D, realistic, drawing, painting, high detail, disfigured"
+            },
+           "Papercut Shadow Box":{
+                "positive": "3D papercut shadow box, Layered, dimensional, depth, silhouette, shadow, papercut, handmade, high contrast",
+                "negative": "painting, drawing, photo, 2D, flat, high detail, blurry, noisy, disfigured"
+            },
+           "Pencil Sketch":{
+                "positive": "Pencil Sketch Drawing, black and white drawing, pencil sketch, graphite drawing",
+                "negative": "ugly, deformed, noisy, blurry, low contrast"
+            },
+           "Photographic":{
+                "positive": "cinematic photo, 35mm photograph, film, bokeh, professional, 4k, highly detailed",
+                "negative": "drawing, painting, crayon, sketch, graphite, impressionist, noisy, blurry, soft, deformed, ugly"
+            },
+           "Pixel Art":{
+                "positive": "pixel-art, low-res, blocky, pixel art style, 8-bit graphics",
+                "negative": "sloppy, messy, blurry, noisy, highly detailed, ultra textured, photo, realistic"
+            },
+           "Pointillism":{
+                "positive": "Pointillism style painting, Composed entirely of small distinct dots of color, vibrant, highly detailed, pointillism",
+                "negative": "line drawing, smooth shading, large color fields, simplistic"
+            },
+           "Pokémon":{
+                "positive": "Pokémon style art, Vibrant, cute, anime, fantasy, reminiscent of Pokémon series",
+                "negative": "realistic, modern, horror, dystopian, violent"
+            },
+           "Pop Art 1":{
+                "positive": "Pop Art style, art, Bright colors, bold outlines, popular culture themes, ironic or kitsch",
+                "negative": "ugly, deformed, noisy, blurry, low contrast, realism, photorealistic, minimalist"
+            },
+           "Pop Art 2":{
+                "positive": "Pop Art, art, vivid colors, flat color, 2D, strong lines, Pop Art",
+                "negative": "ugly, deformed, noisy, blurry, low contrast, photo, realistic"
+            },
+           "Psychedelic":{
+                "positive": "Psychedelic style, Vibrant colors, swirling patterns, abstract forms, surreal, trippy",
+                "negative": "monochrome, black and white, low contrast, realistic, photorealistic, plain, simple"
+            },
+           "RPG Fantasy":{
+                "positive": "Role-playing game (RPG) style fantasy, Detailed, vibrant, immersive, reminiscent of fantasy RPG games",
+                "negative": "sci-fi, modern, urban, futuristic, low detailed"
+            },
+           "Real Estate Photography":{
+                "positive": "Real estate photography style, Professional, inviting, well-lit, high-resolution, property-focused, commercial, highly detailed",
+                "negative": "dark, blurry, unappealing, noisy, unprofessional"
+            },
+           "Renaissance":{
+                "positive": "Renaissance style, Realistic, perspective, light and shadow, religious or mythological themes, highly detailed",
+                "negative": "ugly, deformed, noisy, blurry, low contrast, modernist, minimalist, abstract"
+            },
+           "Retro Arcade":{
+                "positive": "Retro arcade style, 8-bit, pixelated, vibrant, classic video game, old school gaming, reminiscent of 80s and 90s arcade games",
+                "negative": "modern, ultra-high resolution, photorealistic, 3D"
+            },
+           "Retro Game":{
+                "positive": "Retro game art, 16-bit, vibrant colors, pixelated, nostalgic, charming, fun",
+                "negative": "realistic, photorealistic, 35mm film, deformed, glitch, low contrast, noisy"
+            },
+           "Retro Cyberpunk":{
+                "positive": "retro cyberpunk, 1980s inspired, synthwave, neon, vibrant, detailed, retro futurism",
+                "negative": "modern, desaturated, black and white, realism, low contrast"
+            },
+           "Retro Futurism":{
+                "positive": "retro-futuristism, vintage sci-fi, 1950s and 1960s style, atomic age, vibrant, highly detailed, retro futurism",
+                "negative": "contemporary, realistic, rustic, primitive"
+            },
+           "Retro game":{
+                "positive": "retro game art, 16-bit, vibrant colors, pixelated, nostalgic, charming, fun",
+                "negative": "realistic, photorealistic, 35mm film, deformed, glitch, low contrast, noisy"
+            },
+           "Rococo":{
+                "positive": "Rococo, flamboyant, pastel colors, curved lines, elaborate detail, Rococo",
+                "negative": "ugly, deformed, noisy, blurry, low contrast"
+            },
+           "Silhouette":{
+                "positive": "Silhouette style, High contrast, minimalistic, black and white, stark, dramatic",
+                "negative": "ugly, deformed, noisy, blurry, low contrast, color, realism, photorealistic"
+            },
+           "Silhouette Art":{
+                "positive": "Silhouette Art, high contrast, well defined, Silhouette Art",
+                "negative": "ugly, deformed, noisy, blurry, low contrast"
+            },
+           "Simple Vector Art":{
+                "positive": "Simple Vector Art, 2D flat, simple shapes, minimalistic, professional graphic, flat color, high contrast, Simple Vector Art",
+                "negative": "ugly, deformed, noisy, blurry, low contrast, 3D, photo, realistic"
+            },
+           "Sketchup":{
+                "positive": "Sketchup, CAD, professional design, Sketchup",
+                "negative": "ugly, deformed, noisy, blurry, low contrast, photo, photograph"
+            },
+           "Space":{
+                "positive": "Space-themed, Cosmic, celestial, stars, galaxies, nebulas, planets, science fiction, highly detailed",
+                "negative": "earthly, mundane, ground-based, realism"
+            },
+           "Stacked Papercut":{
+                "positive": "Stacked papercut art, 3D, layered, dimensional, depth, precision cut, stacked layers, papercut, high contrast",
+                "negative": "2D, flat, noisy, blurry, painting, drawing, photo, deformed"
+            },
+           "Stained Glass":{
+                "positive": "Stained glass style, Vibrant, beautiful, translucent, intricate, detailed",
+                "negative": "ugly, deformed, noisy, blurry, low contrast, realism, photorealistic"
+            },
+           "Steampunk 1":{
+                "positive": "Steampunk style, antique, mechanical, brass and copper tones, gears, intricate, detailed",
+                "negative": "deformed, glitch, noisy, low contrast, anime, photorealistic"
+            },
+           "Steampunk 2":{
+                "positive": "Steampunk, retrofuturistic science fantasy, steam-powered tech, vintage industry, gears, neo-victorian, steampunk",
+                "negative": "ugly, deformed, noisy, blurry, low contrast"
+            },
+           "Sticker Designs":{
+                "positive": "Vector Art Stickers, professional vector art, sticker designs, Sticker Sheet",
+                "negative": "ugly, deformed, noisy, blurry, low contrast"
+            },
+           "Strategy Game":{
+                "positive": "Strategy game style, Overhead view, detailed map, units, reminiscent of real-time strategy video games",
+                "negative": "first-person view, modern, photorealistic"
+            },
+           "Street Fighter":{
+                "positive": "Street Fighter style 2D art, Vibrant, dynamic, arcade, 2D fighting game, highly detailed, reminiscent of Street Fighter series",
+                "negative": "3D, realistic, modern, photorealistic, turn-based strategy"
+            },
+           "Super Mario":{
+                "positive": "Super Mario style art, Vibrant, cute, cartoony, fantasy, playful, reminiscent of Super Mario series",
+                "negative": "realistic, modern, horror, dystopian, violent"
+            },
+           "Suprematism":{
+                "positive": "Suprematism, abstract, limited color palette, geometric forms, Suprematism",
+                "negative": "ugly, deformed, noisy, blurry, low contrast, realistic"
+            },
+           "Surrealism 1":{
+                "positive": "Surrealist ar, dreamlike, mysterious, provocative, symbolic, intricate, detailed",
+                "negative": "anime, photorealistic, realistic, deformed, glitch, noisy, low contrast"
+            },
+           "Surrealism 2":{
+                "positive": "Surrealism, expressive, dramatic, organic lines and forms, dreamlike, mysterious, Surrealism",
+                "negative": "ugly, deformed, noisy, blurry, low contrast, realistic"
+            },
+           "Techwear Fashion":{
+                "positive": "Techwear fashion, Futuristic, cyberpunk, urban, tactical, sleek, dark, highly detailed",
+                "negative": "vintage, rural, colorful, low contrast, realism, sketch, watercolor"
+            },
+           "Terragen":{
+                "positive": "Terragen, beautiful massive landscape, epic scenery, Terragen",
+                "negative": "ugly, deformed, noisy, blurry, low contrast"
+            },
+           "Texture":{
+                "positive": "texture asset, seamless texture, close-up, texture detail, tileable texture",
+                "negative": "ugly, deformed, noisy, blurry"
+            },
+           "Thick Layered Papercut":{
+                "positive": "Thick layered papercut art, Deep 3D, volumetric, dimensional, depth, thick paper, high stack, heavy texture, tangible layers",
+                "negative": "2D, flat, thin paper, low stack, smooth texture, painting, drawing, photo, deformed"
+            },
+           "Tilt-Shift Photo":{
+                "positive": "Tilt-shift photo, selective focus, miniature effect, blurred background, highly detailed, vibrant, perspective control",
+                "negative": "blurry, noisy, deformed, flat, low contrast, unrealistic, oversaturated, underexposed"
+            },
+           "Tranquil Relaxing Atmosphere":{
+                "positive": "Tranquil Relaxing Atmosphere, calming style, soothing colors, peaceful, idealic, Tranquil Relaxing Atmosphere",
+                "negative": "ugly, deformed, noisy, blurry, low contrast, oversaturated"
+            },
+           "Tribal":{
+                "positive": "Tribal style, Indigenous, ethnic, traditional patterns, bold, natural colors, highly detailed",
+                "negative": "modern, futuristic, minimalist, pastel"
+            },
+           "Typography":{
+                "positive": "Typographic art, Stylized, intricate, detailed, artistic, text-based",
+                "negative": "ugly, deformed, noisy, blurry, low contrast, realism, photorealistic"
+            },
+           "Vaporwave":{
+                "positive": "vaporwave style, retro aesthetic, cyberpunk, vibrant, neon colors, vintage 80s and 90s style, highly detailed",
+                "negative": "monochrome, muted colors, realism, rustic, minimalist, dark"
+            },
+           "Vibrant Rim Light":{
+                "positive": "Vibrant Rim Light, back lighting, beautiful lighting, colored rim light, high contrast",
+                "negative": "ugly, deformed, noisy, blurry, low contrast"
+            },
+           "Volumetric Lighting":{
+                "positive": "Volumetric Lighting, light depth, dramatic atmospheric lighting, volumetric lighting",
+                "negative": "ugly, deformed, noisy, blurry,"
+            },
+           "Watercolor 1":{
+                "positive": "Watercolor painting, Vibrant, beautiful, painterly, detailed, textural, artistic",
+                "negative": "anime, photorealistic, 35mm film, deformed, glitch, low contrast, noisy"
+            },
+           "Watercolor 2":{
+                "positive": "Watercolor style painting, visible paper texture, colorwash, watercolor art",
+                "negative": "ugly, deformed, noisy, blurry, low contrast, photo, realistic"
+            },
+           "Whimsical and Playful":{
+                "positive": "Whimsical and Playful, imaginative, fantastical, bight colors, stylized, happy, Whimsical and Playful",
+                "negative": "ugly, deformed, noisy, blurry, low contrast, drab, boring, moody"
+            },
+           "Wild West":{
+                "positive": "wild west style, the old west, historical, rustic, the wild west",
+                "negative": "ugly, deformed, noisy, blurry, low contrast, drab, boring, moody"
+            },
+           "Zentangle":{
+                "positive": "Zentangle, Intricate, abstract, monochrome, patterns, meditative, highly detailed",
+                "negative": "colorful, representative, simplistic, large fields of color"
+            },
+           "ads-advertising":{
+                "positive": "advertising poster style, Professional, modern, product-focused, commercial, eye-catching, highly detailed",
+                "negative": "noisy, blurry, amateurish, sloppy, unattractive"
+            },
+           "ads-automotive":{
+                "positive": "automotive advertisement style, sleek, dynamic, professional, commercial, vehicle-focused, high-resolution, highly detailed",
+                "negative": "noisy, blurry, unattractive, sloppy, unprofessional"
+            },
+           "ads-corporate":{
+                "positive": "corporate branding style, professional, clean, modern, sleek, minimalist, business-oriented, highly detailed",
+                "negative": "noisy, blurry, grungy, sloppy, cluttered, disorganized"
+            },
+           "ads-fashion editorial":{
+                "positive": "fashion editorial style, high fashion, trendy, stylish, editorial, magazine style, professional, highly detailed",
+                "negative": "outdated, blurry, noisy, unattractive, sloppy"
+            },
+           "ads-food photography":{
+                "positive": "food photography style, appetizing, professional, culinary, high-resolution, commercial, highly detailed",
+                "negative": "unappetizing, sloppy, unprofessional, noisy, blurry"
+            },
+           "ads-gourmet food photography":{
+                "positive": "gourmet food photo, soft natural lighting, macro details, vibrant colors, fresh ingredients, glistening textures, bokeh background, styled plating, wooden tabletop, garnished, tantalizing, editorial quality",
+                "negative": "cartoon, anime, sketch, grayscale, dull, overexposed, cluttered, messy plate, deformed"
+            },
+           "ads-luxury":{
+                "positive": "luxury product style, elegant, sophisticated, high-end, luxurious, professional, highly detailed",
+                "negative": "cheap, noisy, blurry, unattractive, amateurish"
+            },
+           "ads-real estate":{
+                "positive": "real estate photography style, professional, inviting, well-lit, high-resolution, property-focused, commercial, highly detailed",
+                "negative": "dark, blurry, unappealing, noisy, unprofessional"
+            },
+           "ads-retail":{
+                "positive": "retail packaging style, vibrant, enticing, commercial, product-focused, eye-catching, professional, highly detailed",
+                "negative": "noisy, blurry, amateurish, sloppy, unattractive"
+            }
+ }

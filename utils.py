@@ -2,6 +2,8 @@ import torch
 import torchaudio
 import numpy as np
 import cv2
+import json
+import os
 
 
 
@@ -13,6 +15,11 @@ def convert_to_uint8(image):
     if image.max() <= 1.0:
         image = image * 255.0
     image = np.clip(image, 0, 255)
+    return image.astype(np.uint8)
+
+def convert_to_unit8_v2(image):
+    image = (image - image.min()) / (image.max() - image.min())*255
+
     return image.astype(np.uint8)
 
 
@@ -205,5 +212,102 @@ def combine_frames_and_audios(frames_list, audios_list=None, frame_rate=30):
         print("No audio provided!")
 
     return combined_frames, combined_audios_dict
+
+
+
+def get_script_dir():
+    """Get the directory where the script is located."""
+    return os.path.dirname(os.path.abspath(__file__))
+
+def load_styles():
+    """Load the styles.json file from the script's directory."""
+    script_dir = get_script_dir()
+    styles_path = os.path.join(script_dir, "styles.json")
+
+    try:
+        with open(styles_path, "r") as f:
+            return json.load(f)
+    except FileNotFoundError:
+        print(f"Error: The styles.json file was not found in {styles_path}.")
+        # Optional: return default styles as a fallback
+        return {
+            "none": {
+                "positive": "",
+                "negative": ""
+            },
+            "anime1": {
+                "positive": "Japanese comic book anime style, samurai x,  exaggerated features, sharp dark lines, anime, anime style, colorful, vibrant, detailed, intricate, large expressive eyes",
+                "negative": "text, logo, signature, watermark, soft edges, low quality, blurry, realistic style, distorted faces, bad anatomy, poor proportions"
+            },
+            "anime2": {
+                "positive": "a beautiful anime-style illustration, expressive eyes, exaggerated features, vibrant colors, detailed, expressive characters, studio ghibli influence",
+                "negative": "low quality, blurry, realistic style, distorted faces, bad anatomy, poor proportions"
+            },
+            "beauArt": {
+                "positive": "hard edges, black and white book illustration, bold lines, black lines, white background",
+                "negative": "color, poor contrast, realistic, soft edges"
+            },
+            "black Line art":{
+                "positive": "Black Line art, black and white, sharp lines, clear, minimalist, graphic, precision, ink, monochrome",
+                "negative": "photograph, stock photo, realistic, deformed, glitch, color, vague, blurry, noisy, low contrast, photorealistic, realism, impressionism, expressionism, oil, acrylic, watercolor, pastel, textured, gradient, shaded"
+            },
+            "comic1": {
+                "positive": "vivid comic book illustration, bold lines, halftone shading, dramatic action",
+                "negative": "washed-out colors, lack of contrast, soft edges, overly detailed backgrounds"
+            },
+            "comic2": {
+                "positive": "comic book style, dynamic pose, exaggerated features, bold lines, vibrant colors, ink wash, retro style, comic book panel",
+                "negative": "blurry, low quality, poorly drawn, deformed, disfigured, extra limbs, missing limbs, extra fingers, missing fingers, unrealistic anatomy, poorly proportioned, monochrome, grayscale, black and white"
+            },
+            "disney": {
+                "positive": "classic Disney-style art, colorful, detailed characters, expressive emotions, smooth animations, magical and whimsical setting",
+                "negative": "dull colors, lack of detail, distorted features, dark themes"
+            },
+            "manga": {
+                "positive": "black and white manga illustration, bold lines, dynamic compositions, detailed linework, expressive characters, action-packed panels",
+                "negative": "color, poor contrast, lack of detail, blurry, distorted anatomy, flat expressions"
+            },
+            "ps1": {
+                "positive": "low-poly 3D graphics in PS1 style, retro gaming aesthetics, simple geometric shapes, nostalgic vibe",
+                "negative": "modern high-resolution graphics, realistic textures, excessive detail, smooth rendering"
+            },
+            "pixar": {
+                "positive": "a 3D animation in Pixar style, highly detailed, vibrant, whimsical, expressive characters, cinematic lighting, storybook atmosphere",
+                "negative": "grainy textures, flat colors, dull, uninspired composition, poor rendering"
+            },
+            "toy": {
+                "positive": "toy-like miniature characters, bright colors, soft plastic textures, whimsical design, playful atmosphere, detailed craftsmanship",
+                "negative": "realistic details, dull colors, rough textures, lack of charm"
+            }, 
+            "watercolor": {
+                "positive": "soft and vibrant watercolor painting, gentle gradients, flowing textures, light and airy feel, pastel tones",
+                "negative": "harsh lines, digital appearance, over-saturated colors, poor blending"
+            }
+    
+        }
+
+
+def get_available_styles():
+    styles = load_styles()
+    return list(styles.keys())
+
+
+def generate_prompts(art_style, user_positive_prompt="sharp image", user_negative_prompt="blurry"):
+    styles = load_styles()
+    
+    if art_style not in styles:
+        return {
+            "positive_prompt": f"Sorry, no predefined prompts for the '{art_style}' style. Please specify another style.",
+            "negative_prompt": "None"
+        }
+
+    style = styles[art_style]
+    combined_positive = f"{style['positive']}, {user_positive_prompt}".strip(", ")
+    combined_negative = f"{style['negative']}, {user_negative_prompt}".strip(", ")
+
+    return {
+        "positive_prompt": combined_positive,
+        "negative_prompt": combined_negative
+    }
 
 
