@@ -211,64 +211,6 @@
       "widgets_values": []
     },
     {
-      "id": 17,
-      "type": "Painting",
-      "pos": {
-        "0": 1041.15966796875,
-        "1": 171.832763671875
-      },
-      "size": {
-        "0": 315,
-        "1": 270
-      },
-      "flags": {},
-      "order": 10,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "image",
-          "type": "IMAGE",
-          "link": 20
-        },
-        {
-          "name": "lineArt",
-          "type": "IMAGE",
-          "link": null
-        }
-      ],
-      "outputs": [
-        {
-          "name": "painting",
-          "type": "IMAGE",
-          "links": null,
-          "shape": 3
-        },
-        {
-          "name": "sharpImage",
-          "type": "IMAGE",
-          "links": [
-            21
-          ],
-          "slot_index": 1,
-          "shape": 3
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "Painting"
-      },
-      "widgets_values": [
-        26,
-        1,
-        7,
-        1,
-        0,
-        0.5,
-        1.4,
-        1,
-        false
-      ]
-    },
-    {
       "id": 14,
       "type": "ControlNetLoader",
       "pos": {
@@ -342,15 +284,15 @@
       ]
     },
     {
-      "id": 15,
-      "type": "LoadImage",
+      "id": 4,
+      "type": "CheckpointLoaderSimple",
       "pos": {
-        "0": -87.81280517578125,
-        "1": -770.6025390625
+        "0": -433.997314453125,
+        "1": 24.001726150512695
       },
       "size": {
-        "0": 331.10015869140625,
-        "1": 630.9266967773438
+        "0": 315,
+        "1": 98
       },
       "flags": {},
       "order": 1,
@@ -358,28 +300,36 @@
       "inputs": [],
       "outputs": [
         {
-          "name": "IMAGE",
-          "type": "IMAGE",
+          "name": "MODEL",
+          "type": "MODEL",
           "links": [
-            12,
-            18
+            22
           ],
-          "slot_index": 0,
-          "shape": 3
+          "slot_index": 0
         },
         {
-          "name": "MASK",
-          "type": "MASK",
-          "links": null,
-          "shape": 3
+          "name": "CLIP",
+          "type": "CLIP",
+          "links": [
+            11
+          ],
+          "slot_index": 1
+        },
+        {
+          "name": "VAE",
+          "type": "VAE",
+          "links": [
+            8,
+            24
+          ],
+          "slot_index": 2
         }
       ],
       "properties": {
-        "Node name for S&R": "LoadImage"
+        "Node name for S&R": "CheckpointLoaderSimple"
       },
       "widgets_values": [
-        "officeGirl512.png",
-        "image"
+        "wildcardxXLTURBO_wildcardxXLTURBOV10.safetensors"
       ]
     },
     {
@@ -438,19 +388,77 @@
         2,
         "lcm",
         "beta",
-        0.8
+        1
       ]
     },
     {
-      "id": 4,
-      "type": "CheckpointLoaderSimple",
+      "id": 17,
+      "type": "Painting",
       "pos": {
-        "0": -433.997314453125,
-        "1": 24.001726150512695
+        "0": 1041.15966796875,
+        "1": 171.832763671875
       },
       "size": {
         "0": 315,
-        "1": 98
+        "1": 270
+      },
+      "flags": {},
+      "order": 10,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "link": 20
+        },
+        {
+          "name": "lineArt",
+          "type": "IMAGE",
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "name": "painting",
+          "type": "IMAGE",
+          "links": null,
+          "shape": 3
+        },
+        {
+          "name": "sharpImage",
+          "type": "IMAGE",
+          "links": [
+            21
+          ],
+          "slot_index": 1,
+          "shape": 3
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "Painting"
+      },
+      "widgets_values": [
+        26,
+        1,
+        7,
+        1.1,
+        0,
+        1.0999999999999999,
+        1.5,
+        1,
+        false
+      ]
+    },
+    {
+      "id": 15,
+      "type": "LoadImage",
+      "pos": {
+        "0": -87.81280517578125,
+        "1": -770.6025390625
+      },
+      "size": {
+        "0": 331.10015869140625,
+        "1": 630.9266967773438
       },
       "flags": {},
       "order": 2,
@@ -458,36 +466,28 @@
       "inputs": [],
       "outputs": [
         {
-          "name": "MODEL",
-          "type": "MODEL",
+          "name": "IMAGE",
+          "type": "IMAGE",
           "links": [
-            22
+            12,
+            18
           ],
-          "slot_index": 0
+          "slot_index": 0,
+          "shape": 3
         },
         {
-          "name": "CLIP",
-          "type": "CLIP",
-          "links": [
-            11
-          ],
-          "slot_index": 1
-        },
-        {
-          "name": "VAE",
-          "type": "VAE",
-          "links": [
-            8,
-            24
-          ],
-          "slot_index": 2
+          "name": "MASK",
+          "type": "MASK",
+          "links": null,
+          "shape": 3
         }
       ],
       "properties": {
-        "Node name for S&R": "CheckpointLoaderSimple"
+        "Node name for S&R": "LoadImage"
       },
       "widgets_values": [
-        "wildcardxXLTURBO_wildcardxXLTURBOV10.safetensors"
+        "untitled (1).png",
+        "image"
       ]
     },
     {
@@ -537,7 +537,7 @@
       "widgets_values": [
         "",
         "",
-        "Comic Book"
+        "Futuristic Sci-Fi"
       ]
     }
   ],
@@ -734,8 +734,8 @@
     "ds": {
       "scale": 0.8264462809917354,
       "offset": [
-        1067.4123710349907,
-        883.8868274484439
+        1039.177065728118,
+        910.171913752606
       ]
     }
   },
