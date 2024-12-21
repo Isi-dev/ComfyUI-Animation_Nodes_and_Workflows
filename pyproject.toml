@@ -10,6 +10,6 @@ Repository = "https://github.com/Isi-dev/ComfyUI-Animation_Nodes_and_Workflows"
 #  Used by Comfy Registry https://comfyregistry.org
 
 [tool.comfy]
-PublisherId = ""
+PublisherId = "isi-dev"
 DisplayName = "ComfyUI-Animation_Nodes_and_Workflows"
 Icon = ""
