@@ -1,0 +1,15 @@
+[project]
+name = "comfyui-animation_nodes_and_workflows"
+description = "These are nodes and workflows that can facilitate the creation of animations and video compilations."
+version = "1.0.0"
+license = {file = "LICENSE"}
+dependencies = ["torch", "torchaudio", "numpy", "opencv-python", "mediapipe"]
+
+[project.urls]
+Repository = "https://github.com/Isi-dev/ComfyUI-Animation_Nodes_and_Workflows"
+#  Used by Comfy Registry https://comfyregistry.org
+
+[tool.comfy]
+PublisherId = ""
+DisplayName = "ComfyUI-Animation_Nodes_and_Workflows"
+Icon = ""
